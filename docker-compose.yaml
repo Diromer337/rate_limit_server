@@ -1,0 +1,8 @@
+version: '3'
+services:
+  server:
+    build: server/
+    ports:
+    - "1337:1337"
+  redis:
+    image: "library/redis:alpine"
